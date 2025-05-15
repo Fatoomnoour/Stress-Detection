@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import pandas as pd
+
 import numpy as np
 from pydantic import BaseModel
 
