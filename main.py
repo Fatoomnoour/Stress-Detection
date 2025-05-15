@@ -93,8 +93,10 @@ async def predict_stress_level(data: StressPredictionInput):
         prediction = model.predict(processed_input)
         
         return {
-            "status": "success",
-            "prediction": int(prediction[0]),
+            "success": True,
+            "data": {
+                "prediction": int(prediction[0])
+            },
             "message": "Prediction completed successfully"
         }
         
