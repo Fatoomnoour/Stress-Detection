@@ -1,18 +1,32 @@
 # Stress Detection
 
-A small educational machine-learning project that predicts a stress level from the sleep and lifestyle dataset. The repository includes the original notebook, a Flask entry point, and serialized model artifacts used by the demo. It is not a medical diagnostic tool.
+> A simple educational machine-learning project that predicts stress levels from sleep and lifestyle features.
 
-## Reproducible setup
+![Status](https://img.shields.io/badge/status-educational-/-portfolio-project-blue)
+
+## What it does
+
+**Raw dataset → preprocessing → trained model → stress prediction**
+
+## Tech stack
+
+`Python · Pandas · Scikit-learn · Jupyter Notebook`
+
+## Quick start
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
 ```
 
-The committed `preprocessor.pkl` and `stress_predictor.pkl` files are inference artifacts. Do not replace them without recording the training data version, feature order, preprocessing steps, evaluation metrics, and Python/package versions. The CSV is a sample dataset for learning only; do not add personal or production data.
+## Project layout
 
-## Quality and limitations
+The repository keeps the implementation, configuration, and supporting assets close to the workflow so the project is easy to inspect and reproduce. See the source folders and files for the detailed implementation.
 
-Run the notebook from top to bottom to reproduce the exploratory workflow. Before using the model for any real decision, add a held-out evaluation report, class-level metrics, input-schema validation, and a model/data version record. Predictions are for education and portfolio demonstration only.
+## Important notes
+
+**Status:** Educational / portfolio project. Use sample or synthetic data only unless the project documentation explicitly states otherwise. Review the limitations and security notes before any deployment or real-world use.
+
+## License
+
+See the repository license file when present. Contributions and improvements should keep the existing attribution and project history clear.
